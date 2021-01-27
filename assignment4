@@ -1,0 +1,31 @@
+Question 1
+By how many ways we can access elements in the DOM and write about them in brief?
+Ans.
+a) Accessing Elements by ID:-The easiest way to access a single element in the DOM is by its unique ID. 
+We can grab an element by ID with the getElementById() method of the document object.
+document.getElementById();
+
+b)Accessing Elements by Class:-The class attribute is used to access one or more specific elements in the DOM.
+We can get all the elements with a given class name with the getElementsByClassName() method.
+document.getElementsByClassName();
+
+c)Accessing Elements by Tag:-A less specific way to access multiple elements on the page would be by its HTML tag name.
+We access an element by tag with the getElementsByTagName() method.
+document.getElementsByTagName();
+
+d)Query Selectors:- through this we can select ids,classes,tags.
+document.querySelector();
+document.querySelectorAll();
+
+-----------------------------------------------------------------------------------------------------------------------------------
+Question 2
+Write a javascript program that will take 2 numbers from the HTML page and display them on the
+HTML page after the addition of those 2 numbers.
+
+Ans.
+
+function add(){
+    var num1=document.getElementById('number1').value;
+    var num2=document.getElementById('number2').value;
+    document.getElementsById('addition').value=num1+num2;
+}
